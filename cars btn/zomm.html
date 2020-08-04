@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <style>
+        .red{
+            color: red
+        }
+        .zoomed{
+            font-size: 2rem ;
+            cursor: pointer;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <button> enable </button>
+    <button> disable </button>
+    <h1> click here to color them </h1>
+    <ul>
+        <li> bmw </li>
+        <li> ferrari </li>
+        <li> toyota </li>
+
+
+
+    </ul>
+    <script>
+        let btn = document.querySelectorAll('button')
+        let list = document.querySelectorAll('ul')
+
+        btn[0].addEventListener("click" , function(){
+            console.log("hi")
+            list.addEventListener("mouseover" , enla) ;
+        })  
+
+        btn[1].addEventListener("click" , function (){
+            list.removeEventListener("mouseover" , enla) ;
+        })
+        
+        let enla = function(){
+            list.classList.add("zoomed") ;
+
+            list.addEventListener("mouseout"  ,function(){
+                list.classList.remove("zoomed") ;
+            })
+        }
+        list.addEventListener("click" , function(e) {
+            e.target.classList.toggle("red") ;
+        })
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
