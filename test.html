@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+#car{
+    color : blue ;
+    border: 2px solid currentColor ;
+}
+
+</style>
+<body>
+    
+    <button> toyota </button>
+    <button> yamaha </button>
+    <button> ggez </button>
+
+    <div id= "car"> hihihihihihihihihi </div>
+    <script>
+        btn = document.querySelectorAll('button')
+        btn[0].addEventListener("click" , function (){
+
+            console.log("hi")
+           
+            if (document.getElementById("car").style.color == "red" ) {
+                document.getElementById("car").style.color = "blue"
+            }
+            else {
+                document.getElementById("car").style.color = "red"
+            }
+        })
+            
+
+        btn[1].addEventListener("click" , function(){
+
+            console.log("he") })
+
+        btn[2].addEventListener("click" , function(){
+            console.log("kek") })
+
+
+    </script>
+</body>
+</html>
