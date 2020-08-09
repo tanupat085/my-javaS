@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> html - button </title>
 </head>
+<style>
+
+#tex{
+    color : orange;
+    border : 10px solid currentColor;
+}
+
+
+</style>
 <body>
+    
+    
+    <button> click  </button>
+    <button> click here </button>
+    <div id = "tex"> html class by tanupat   </div>
 
-    <div class = "car">  BMW </div>
-    <div class = "car"> TOYOTA </div>
-    <div class = "car"> FERRARI </div>
 
-    <script>
+    <script>  
 
-        let mycar = document.querySelectorAll(".car")
-        
-        for (let i = 0 ; i <= mycar.length ; i++){
-            console.log(mycar[i])
-        }
-        
+        btn = document.querySelectorAll("button")
 
+        btn[0].addEventListener("click" , function(){
+
+            console.log("hi")
+                    // document.getElementById("tex").style.color = "red"
+            if (document.getElementById("tex").style.color == "red" ) {
+                document.getElementById("tex").style.color = "blue"
+            }
+            else {
+                document.getElementById("tex").style.color = "red"  
+            }
+
+        } )
+            btn[1].addEventListener("click" , function(){
+
+            console.log("kek")
+
+        })
+
+    
+    
+    
+    
     </script>
 
 
 
-    
 </body>
 </html>
