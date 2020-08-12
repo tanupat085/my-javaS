@@ -3,54 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> html - button </title>
+    <title>Document</title>
 </head>
 <style>
 
-#tex{
-    color : orange;
-    border : 10px solid currentColor;
+.x1 {
+    color: blue ;
+    border: 10px  solid currentColor ;
 }
 
 
 </style>
 <body>
+    <div id= "x1"> test doxument </div>
     
-    
-    <button> click  </button>
-    <button> click here </button>
-    <div id = "tex"> html class by tanupat   </div>
+    <button> aod </button>
+    <script>
+        btn = document.querySelector('button')
+        // btn.addEventListrner("click" , function(){
+
+        //     console.log('  hi  ')
 
 
-    <script>  
+        // })
+        btn.addEventListener("click" , function(){
 
-        btn = document.querySelectorAll("button")
+        console.log("he") })
 
-        btn[0].addEventListener("click" , function(){
 
-            console.log("hi")
-                    // document.getElementById("tex").style.color = "red"
-            if (document.getElementById("tex").style.color == "red" ) {
-                document.getElementById("tex").style.color = "blue"
-            }
-            else {
-                document.getElementById("tex").style.color = "red"  
-            }
 
-        } )
-            btn[1].addEventListener("click" , function(){
 
-            console.log("kek")
 
-        })
-
-    
-    
-    
-    
     </script>
-
-
-
+    
 </body>
 </html>
