@@ -6,35 +6,35 @@
     <title>Document</title>
 </head>
 <style>
-
-.x1 {
-    color: blue ;
-    border: 10px  solid currentColor ;
+p{
+    color: red ;
 }
+/* อ้างถึงทั้งหมด เช่น มี p หลายตัวให้ใช้ .p หรือ ประกาศไปโต้งๆเลย*/
+
+
+.car{
+
+    color: red ;
+
+}
+/* อ้างถึง id ที่ชื่อ car ทั้งหมด ในที่นี้จะใช้ .car */
+
+
+
+/* อ้างถึง id ใน body ใช้ # เช่น #car */
+#car{
+    color: red ;
+}
+
 
 
 </style>
 <body>
-    <div id= "x1"> test doxument </div>
-    
-    <button> aod </button>
-    <script>
-        btn = document.querySelector('button')
-        // btn.addEventListrner("click" , function(){
-
-        //     console.log('  hi  ')
-
-
-        // })
-        btn.addEventListener("click" , function(){
-
-        console.log("he") })
-
-
-
-
-
-    </script>
-    
+    <h1> this is the header </h1>
+    <p> asdf asdfasdf </p>
+    <p> sadfs fasdfsadfsadfs</p>
+    <div id = "car"> toyota  </div>
+    <div id = "car"> suzuki  </div>
+    <div id = "bike"> yamaha </div>
 </body>
 </html>
