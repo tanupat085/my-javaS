@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>xxxxxxxx</title>
 </head>
-<style>
-p{
-    color: red ;
-}
-/* อ้างถึงทั้งหมด เช่น มี p หลายตัวให้ใช้ .p หรือ ประกาศไปโต้งๆเลย*/
-
-
+<style> 
 .car{
-
-    color: red ;
-
+    color:red ;
+    border: 2 px currentColor ; 
 }
-/* อ้างถึง id ที่ชื่อ car ทั้งหมด ในที่นี้จะใช้ .car */
-
-
-
-/* อ้างถึง id ใน body ใช้ # เช่น #car */
-#car{
-    color: red ;
-}
-
-
 
 </style>
 <body>
-    <h1> this is the header </h1>
-    <p> asdf asdfasdf </p>
-    <p> sadfs fasdfsadfsadfs</p>
-    <div id = "car"> toyota  </div>
-    <div id = "car"> suzuki  </div>
-    <div id = "bike"> yamaha </div>
+    
+    <div class = "content">
+        <div class= "content-top">  a  </div>
+        <div class= "content-right"> b </div>
+        <div class= "content-left"> c </div>
+
+
+    </div>
+
+    <div class = "car"> ya s</div>
+    <button> test </button>
+    <script>
+        btn = document.querySelector('button')
+        btn.addEventListener("click" , function(){
+            console.log("hi")
+        })
+        
+
+
+
+    </script>
+    <svg width = "150" height = "150">
+
+        <circle cx="100" cy="100" r="21" stroke="red" stroke-width="2" fil="blue"/>
+    
+    </svg>
+ 
+
+    
+
 </body>
 </html>
