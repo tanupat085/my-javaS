@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test lotto </title>
+    <p> เลขที่ถูกคือ </p>
+    <p id = "numb"> </p>
+
+
+
+</head>
+<body>
+    <script>
+        let num =  prompt("กรอกเลขที่จะซื้อ : ")
+        console.log("number :   " + num)
+        // console.log(Math.floor(Math.random() * 10))
+        //0-9 ให้ใส้เลข 10
+        //0-10 ให้ใส่เลข 11
+        document.getElementById("numb").innerHTML = Math.floor(Math.random() * 10)
+
+
+        
+
+
+    </script>
+</body>
+</html>
